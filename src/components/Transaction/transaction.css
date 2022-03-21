@@ -1,0 +1,37 @@
+.transaction-container {
+  display: flex;
+  align-items: center;
+  width: 87.5rem;
+  max-width: 100%;
+  background-color: #f0f0f0;
+  border: 1px solid #8ab9bf;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.transaction-description {
+  flex: 1;
+  margin: 0 2rem;
+}
+
+.transaction-amount,
+.transaction-type {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.transaction-type {
+  color: #f24e1e;
+  margin-top: 8px;
+}
+
+.transaction-description p {
+  font-size: 1.6rem;
+}
+
+.trash-icon {
+  color: #f24e1e;
+  font-size: 2.4rem;
+  cursor: pointer;
+}
