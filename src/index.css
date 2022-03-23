@@ -16,3 +16,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.no-transaction {
+  text-align: center;
+  height: 25vh;
+}

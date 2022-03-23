@@ -34,7 +34,13 @@ function App() {
         setBalance={setBalance}
         previousBalance={balance}
       />
-      <Transactions handleDelete={handleDelete} transactions={transactions} />
+      {!transactions.length ? (
+        <p className='no-transaction'>
+          You do not have any transaction at the monent
+        </p>
+      ) : (
+        <Transactions handleDelete={handleDelete} transactions={transactions} />
+      )}
       <Footer />
     </div>
   );
