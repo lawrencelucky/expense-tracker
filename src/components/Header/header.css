@@ -1,11 +1,11 @@
-header {
+.header {
   background-color: #8ab9bf;
-  padding: 2.5rem;
+  padding: 2rem;
 }
 
-h1 {
+.header h1 {
   color: white;
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
 }

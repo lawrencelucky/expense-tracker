@@ -1,9 +1,9 @@
 import './balance.css';
 
-const Balance = () => {
+const Balance = (props) => {
   return (
     <div className='balance-container'>
-      <p>$5000</p>
+      <p>${props.balance}</p>
     </div>
   );
 };

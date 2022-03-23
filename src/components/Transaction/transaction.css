@@ -1,8 +1,7 @@
 .transaction-container {
   display: flex;
   align-items: center;
-  width: 87.5rem;
-  max-width: 100%;
+  width: 100%;
   background-color: #f0f0f0;
   border: 1px solid #8ab9bf;
   border-radius: 10px;
@@ -22,8 +21,15 @@
 }
 
 .transaction-type {
-  color: #f24e1e;
   margin-top: 8px;
+}
+
+.expense {
+  color: #f24e1e;
+}
+
+.income {
+  color: #75d05e;
 }
 
 .transaction-description p {

@@ -2,17 +2,26 @@ import { BsTrash } from 'react-icons/bs';
 
 import './transaction.css';
 
-const Transaction = () => {
+const Transaction = (props) => {
   return (
     <div className='transaction-container'>
       <div>
-        <p className='transaction-amount'>$5</p>
-        <p className='transaction-type'>Expense</p>
+        <p className='transaction-amount'>${props.amount}</p>
+        <p
+          className={`transaction-type ${
+            props.type === 'expense' ? 'expense' : 'income'
+          }`}
+        >
+          {props.type === 'expense' ? 'Expense' : 'Income'}
+        </p>
       </div>
       <div className='transaction-description'>
-        <p>Greek Yoghurt</p>
+        <p>{props.description}</p>
       </div>
-      <BsTrash className='trash-icon' />
+      <BsTrash
+        className='trash-icon'
+        onClick={() => props.handleDelete(props.transaction)}
+      />
     </div>
   );
 };

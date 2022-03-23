@@ -2,8 +2,8 @@ import './header.css';
 
 const Header = () => {
   return (
-    <header>
-      <h1>EXPENSE TRACKER</h1>
+    <header className='header'>
+      <h1 className='heading'>EXPENSE TRACKER</h1>
     </header>
   );
 };

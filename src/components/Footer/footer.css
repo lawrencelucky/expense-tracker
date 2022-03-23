@@ -1,0 +1,16 @@
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 2rem 0;
+}
+
+.footer-container p {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.footer-icon {
+  margin: 0 1rem;
+}

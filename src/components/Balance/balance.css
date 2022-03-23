@@ -1,9 +1,9 @@
 .balance-container {
-  height: 25vh;
+  height: 18vh;
   display: grid;
   place-items: center;
 }
 
 p {
-  font-size: 7rem;
+  font-size: 4rem;
 }

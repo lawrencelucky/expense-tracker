@@ -1,0 +1,41 @@
+.add-transaction-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+select {
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  font-weight: 700;
+  margin-right: 2rem;
+  border: 1px solid #c4c4c4;
+}
+
+input {
+  padding: 1rem 1.5rem;
+  margin-right: 2rem;
+  border-radius: 10px;
+  border: 1px solid #c4c4c4;
+  outline: 0;
+  font-size: 1.6rem;
+}
+
+input[type='number'] {
+  width: 12rem;
+}
+
+input[type='text'] {
+  width: 35rem;
+}
+
+button {
+  color: #f9f9f9;
+  background: #60acb7;
+  font-weight: 700;
+  font-size: 1.6rem;
+  padding: 1rem 2.4rem;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
