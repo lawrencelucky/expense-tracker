@@ -9,19 +9,38 @@
   margin-bottom: 2rem;
 }
 
-.transaction-description {
+.transaction-description-container {
   flex: 1;
-  margin: 0 2rem;
+  display: flex;
+  margin-left: 24px;
+  align-items: center;
 }
 
 .transaction-amount,
-.transaction-type {
+.transaction-type,
+.transaction-description,
+.transaction-date {
   font-size: 1.6rem;
   font-weight: bold;
 }
 
+.transaction-amount {
+  width: 10rem;
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.transaction-date {
+  color: #9b9898;
+  font-size: 1.2rem;
+}
+
 .transaction-type {
-  margin-top: 8px;
+  margin-right: 8px;
+}
+
+.transaction-description {
+  margin-left: 8px;
 }
 
 .expense {

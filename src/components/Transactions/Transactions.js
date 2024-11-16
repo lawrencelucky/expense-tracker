@@ -1,12 +1,18 @@
-import Transaction from '../Transaction/Transaction';
+import { useEffect } from "react";
+import Transaction from "../Transaction/Transaction";
 
-import './transactions.css';
+import "./transactions.css";
 
 const Transactions = (props) => {
-  console.log(props.transactions);
+  useEffect(() => {
+    const stringifiedTransactions = JSON.stringify(props.transactions);
+
+    localStorage.setItem("transactions", stringifiedTransactions);
+  }, [props.transactions]);
+
   return (
-    <div className='overall-container'>
-      <div className='transactions-container'>
+    <div className="overall-container">
+      <div className="transactions-container">
         {props.transactions.map((transaction, index) => {
           return (
             <Transaction
